@@ -1,0 +1,1419 @@
+11:36:24,419 root INFO path base: /home/broke31/Desktop/PICO/Traceability_code_weld_data
+11:36:24,420 root INFO _______________________________________
+11:36:24,420 root INFO analyze: WD191017164519-1A192900227.csv
+11:36:24,451 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  19.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P065    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P065    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:24,451 root INFO _______________________________________
+11:36:24,451 root INFO __________CSV AFTER CLEAN____________
+11:36:24,457 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P065   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P065   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+4   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+5   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+6   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+7   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+8   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+9   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+10  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+11  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+12  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+13  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+14  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+15  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+16  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+17  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+18  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+19  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+20  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+21  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+22  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+23  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+24  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+25  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+26  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+27  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+28  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+29  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+30  SALDATURA OP1     P067   NaN  ...       0.00                   0.0  1.571326e+09
+31  SALDATURA OP1     P069   NaN  ...       7.46                   0.0  1.571327e+09
+32  SALDATURA OP1     P069   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP1     P068   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP1     P068   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571327e+09
+36  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571327e+09
+37  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571327e+09
+38  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571327e+09
+
+[38 rows x 14 columns]
+11:36:24,484 root INFO __________END CLEAN____________
+11:36:24,484 root INFO write csv into db... host localhost: port: 8086
+11:36:24,518 root INFO __________END Write____________
+11:36:24,518 root INFO _______________________________________
+11:36:24,518 root INFO analyze: WD191017165505-1A192900230.csv
+11:36:24,548 root INFO Initial csv: -               0         1      2   ...   13    14   15
+0          START        19     10  ...  5.0  Type  1.0
+1          100ms       NaN    NaN  ...  NaN   NaN  NaN
+2        Program  Position  Error  ...  NaN   NaN  NaN
+3  SALDATURA OP2      P086    NaN  ...  NaN   NaN  NaN
+4  SALDATURA OP2      P086    NaN  ...  NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:24,548 root INFO _______________________________________
+11:36:24,549 root INFO __________CSV AFTER CLEAN____________
+11:36:24,552 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+5   SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+6   SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+7   SALDATURA OP2     P086   NaN  ...       5.28                   5.6  1.571325e+09
+8   SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571325e+09
+9   SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571325e+09
+10  SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571325e+09
+11  SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571325e+09
+12  SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571325e+09
+13  SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571325e+09
+14  SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571325e+09
+15  SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571326e+09
+16  SALDATURA OP2     P086   NaN  ...       5.28                  34.1  1.571326e+09
+17  SALDATURA OP2     P086   NaN  ...       5.28                  28.5  1.571326e+09
+18  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571326e+09
+19  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+20  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+21  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+22  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+23  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+24  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+25  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571327e+09
+26  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571327e+09
+27  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571327e+09
+28  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571327e+09
+29  SALDATURA OP2     P088   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP2     P088   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P066   NaN  ...       7.46                   0.0  1.571327e+09
+32  SALDATURA OP2     P066   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP2     P068   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P068   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP2     P076   NaN  ...       0.00                   0.0  1.571328e+09
+36  SALDATURA OP2     P076   NaN  ...       0.00                   0.0  1.571328e+09
+37  SALDATURA OP2     P076   NaN  ...       0.00                   0.0  1.571328e+09
+38  SALDATURA OP2     P076   NaN  ...       0.00                   0.0  1.571328e+09
+
+[38 rows x 14 columns]
+11:36:24,577 root INFO __________END CLEAN____________
+11:36:24,578 root INFO write csv into db... host localhost: port: 8086
+11:36:24,604 root INFO __________END Write____________
+11:36:24,604 root INFO _______________________________________
+11:36:24,604 root INFO analyze: WD191017164437-1A192900227.csv
+11:36:24,631 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  37.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P088    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P088    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:24,632 root INFO _______________________________________
+11:36:24,632 root INFO __________CSV AFTER CLEAN____________
+11:36:24,637 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP1     P088  ...                   0.0  1.571323e+09
+2    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+3    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+4    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+5    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+127  SALDATURA OP1     P097  ...                   0.0  1.571336e+09
+128  SALDATURA OP1     P097  ...                   0.0  1.571336e+09
+129  SALDATURA OP1     P097  ...                   0.0  1.571336e+09
+130  SALDATURA OP1     P097  ...                   0.0  1.571336e+09
+131  SALDATURA OP1     P097  ...                   0.0  1.571336e+09
+
+[131 rows x 14 columns]
+11:36:24,683 root INFO __________END CLEAN____________
+11:36:24,683 root INFO write csv into db... host localhost: port: 8086
+11:36:24,723 root INFO __________END Write____________
+11:36:24,723 root INFO _______________________________________
+11:36:24,723 root INFO analyze: WD191017165208-1A192900229.csv
+11:36:24,750 root INFO Initial csv: -               0         1      2   ...   13    14   15
+0          START        19     10  ...  8.0  Type  1.0
+1          100ms       NaN    NaN  ...  NaN   NaN  NaN
+2        Program  Position  Error  ...  NaN   NaN  NaN
+3  SALDATURA OP2      P077    NaN  ...  NaN   NaN  NaN
+4  SALDATURA OP2      P077    NaN  ...  NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:24,750 root INFO _______________________________________
+11:36:24,750 root INFO __________CSV AFTER CLEAN____________
+11:36:24,753 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P077   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P077   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P077   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P077   NaN  ...      10.45                   0.0  1.571324e+09
+5   SALDATURA OP2     P077   NaN  ...      10.45                  27.1  1.571324e+09
+6   SALDATURA OP2     P077   NaN  ...      10.45                  27.1  1.571324e+09
+7   SALDATURA OP2     P077   NaN  ...      10.45                  27.1  1.571325e+09
+8   SALDATURA OP2     P092   NaN  ...      10.45                  27.1  1.571325e+09
+9   SALDATURA OP2     P092   NaN  ...      10.45                  27.1  1.571325e+09
+10  SALDATURA OP2     P092   NaN  ...      10.45                  27.1  1.571325e+09
+11  SALDATURA OP2     P092   NaN  ...      10.45                  27.1  1.571325e+09
+12  SALDATURA OP2     P092   NaN  ...      10.45                  27.1  1.571325e+09
+13  SALDATURA OP2     P092   NaN  ...      10.45                  27.1  1.571325e+09
+14  SALDATURA OP2     P092   NaN  ...      10.45                  27.1  1.571325e+09
+15  SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+16  SALDATURA OP2     P078   NaN  ...       0.00                   0.0  1.571325e+09
+17  SALDATURA OP2     P078   NaN  ...       0.00                   0.0  1.571326e+09
+18  SALDATURA OP2     P072   NaN  ...       7.46                   0.0  1.571326e+09
+19  SALDATURA OP2     P072   NaN  ...       0.00                   0.0  1.571326e+09
+20  SALDATURA OP2     P072   NaN  ...       0.00                   0.0  1.571326e+09
+21  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+22  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+23  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+24  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+25  SALDATURA OP2    GP007   NaN  ...       0.00                   0.0  1.571326e+09
+
+[25 rows x 14 columns]
+11:36:24,777 root INFO __________END CLEAN____________
+11:36:24,777 root INFO write csv into db... host localhost: port: 8086
+11:36:24,802 root INFO __________END Write____________
+11:36:24,802 root INFO _______________________________________
+11:36:24,802 root INFO analyze: WD191017165501-1A192900230.csv
+11:36:24,829 root INFO Initial csv: -               0         1      2   ...   13    14   15
+0          START        19     10  ...  1.0  Type  1.0
+1          100ms       NaN    NaN  ...  NaN   NaN  NaN
+2        Program  Position  Error  ...  NaN   NaN  NaN
+3  SALDATURA OP2      P060    NaN  ...  NaN   NaN  NaN
+4  SALDATURA OP2      P060    NaN  ...  NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:24,829 root INFO _______________________________________
+11:36:24,829 root INFO __________CSV AFTER CLEAN____________
+11:36:24,832 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P060   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P060   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P060   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571324e+09
+5   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571324e+09
+6   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+7   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+8   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+9   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+10  SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+11  SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+12  SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+13  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+14  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+15  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+17  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+18  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+19  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+20  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+21  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+25  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+26  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571327e+09
+27  SALDATURA OP2     P061   NaN  ...       0.00                   0.0  1.571327e+09
+28  SALDATURA OP2     P061   NaN  ...       0.00                   0.0  1.571327e+09
+29  SALDATURA OP2     P062   NaN  ...       7.46                   0.0  1.571327e+09
+30  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P063   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP2     P063   NaN  ...       0.00                   0.0  1.571327e+09
+
+[35 rows x 14 columns]
+11:36:24,859 root INFO __________END CLEAN____________
+11:36:24,859 root INFO write csv into db... host localhost: port: 8086
+11:36:24,884 root INFO __________END Write____________
+11:36:24,884 root INFO _______________________________________
+11:36:24,884 root INFO analyze: WD191017164529-1A192900227.csv
+11:36:24,910 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  29.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P077    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P077    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:24,910 root INFO _______________________________________
+11:36:24,911 root INFO __________CSV AFTER CLEAN____________
+11:36:24,913 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P077   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P077   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P077   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571324e+09
+5   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571324e+09
+6   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571324e+09
+7   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571324e+09
+8   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571324e+09
+9   SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571324e+09
+10  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571324e+09
+11  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+12  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+13  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+14  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+15  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+16  SALDATURA OP1     P078   NaN  ...       0.00                   0.0  1.571325e+09
+17  SALDATURA OP1     P078   NaN  ...       0.00                   0.0  1.571325e+09
+18  SALDATURA OP1     P079   NaN  ...       7.46                   0.0  1.571325e+09
+19  SALDATURA OP1     P079   NaN  ...       0.00                   0.0  1.571325e+09
+20  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571325e+09
+21  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+22  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P074   NaN  ...       0.00                   0.0  1.571326e+09
+
+[25 rows x 14 columns]
+11:36:24,939 root INFO __________END CLEAN____________
+11:36:24,939 root INFO write csv into db... host localhost: port: 8086
+11:36:24,978 root INFO __________END Write____________
+11:36:24,978 root INFO _______________________________________
+11:36:24,978 root INFO analyze: WD191017165145-1A192900229.csv
+11:36:25,7 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  45.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P032    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P032    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,7 root INFO _______________________________________
+11:36:25,7 root INFO __________CSV AFTER CLEAN____________
+11:36:25,11 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+2    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+3    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+4    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+5    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+297  SALDATURA OP2     P050  ...                   0.0  1.571353e+09
+298  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+299  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+300  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+301  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+
+[301 rows x 14 columns]
+11:36:25,38 root INFO __________END CLEAN____________
+11:36:25,38 root INFO write csv into db... host localhost: port: 8086
+11:36:25,77 root INFO __________END Write____________
+11:36:25,77 root INFO _______________________________________
+11:36:25,77 root INFO analyze: WD191017164522-1A192900227.csv
+11:36:25,103 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  22.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P071    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P071    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,103 root INFO _______________________________________
+11:36:25,103 root INFO __________CSV AFTER CLEAN____________
+11:36:25,106 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P071   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P071   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P071   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+5   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+6   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+7   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+8   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+9   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+10  SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+11  SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+12  SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+13  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+14  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+15  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+16  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+17  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+18  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+19  SALDATURA OP1     P072   NaN  ...       0.00                   0.0  1.571325e+09
+20  SALDATURA OP1     P072   NaN  ...       0.00                   0.0  1.571325e+09
+21  SALDATURA OP1     P072   NaN  ...       7.46                   0.0  1.571326e+09
+22  SALDATURA OP1     P072   NaN  ...       0.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P072   NaN  ...       0.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+26  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+27  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+28  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+
+[28 rows x 14 columns]
+11:36:25,139 root INFO __________END CLEAN____________
+11:36:25,139 root INFO write csv into db... host localhost: port: 8086
+11:36:25,165 root INFO __________END Write____________
+11:36:25,165 root INFO _______________________________________
+11:36:25,165 root INFO analyze: WD191017165321-1A192900228.csv
+11:36:25,190 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  21.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P056    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P056    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,190 root INFO _______________________________________
+11:36:25,190 root INFO __________CSV AFTER CLEAN____________
+11:36:25,194 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P056   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P056   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P056   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+5   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+6   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+7   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+8   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+9   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+10  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+11  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+12  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+13  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+14  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+15  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+17  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+18  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+19  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+20  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+21  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+26  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+27  SALDATURA OP1     P059   NaN  ...       0.00                   0.0  1.571327e+09
+28  SALDATURA OP1     P059   NaN  ...       0.00                   0.0  1.571327e+09
+29  SALDATURA OP1     P060   NaN  ...       7.46                   0.0  1.571327e+09
+30  SALDATURA OP1     P060   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+
+[35 rows x 14 columns]
+11:36:25,229 root INFO __________END CLEAN____________
+11:36:25,229 root INFO write csv into db... host localhost: port: 8086
+11:36:25,255 root INFO __________END Write____________
+11:36:25,255 root INFO _______________________________________
+11:36:25,255 root INFO analyze: WD191017164515-1A192900227.csv
+11:36:25,280 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  15.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P056    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P056    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,281 root INFO _______________________________________
+11:36:25,281 root INFO __________CSV AFTER CLEAN____________
+11:36:25,284 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P056   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P056   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P056   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+5   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+6   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+7   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+8   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+9   SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+10  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571324e+09
+11  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+12  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+13  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+14  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+15  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+17  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+18  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+19  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+20  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571325e+09
+21  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+26  SALDATURA OP1     P056   NaN  ...      14.00                   0.0  1.571326e+09
+27  SALDATURA OP1     P059   NaN  ...       0.00                   0.0  1.571326e+09
+28  SALDATURA OP1     P059   NaN  ...       0.00                   0.0  1.571326e+09
+29  SALDATURA OP1     P060   NaN  ...       7.46                   0.0  1.571326e+09
+30  SALDATURA OP1     P060   NaN  ...       0.00                   0.0  1.571326e+09
+31  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP1     P066   NaN  ...       0.00                   0.0  1.571327e+09
+
+[35 rows x 14 columns]
+11:36:25,310 root INFO __________END CLEAN____________
+11:36:25,310 root INFO write csv into db... host localhost: port: 8086
+11:36:25,341 root INFO __________END Write____________
+11:36:25,341 root INFO _______________________________________
+11:36:25,341 root INFO analyze: WD191017165452-1A192900230.csv
+11:36:25,367 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  52.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P032    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P032    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,367 root INFO _______________________________________
+11:36:25,367 root INFO __________CSV AFTER CLEAN____________
+11:36:25,371 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+2    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+3    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+4    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+5    SALDATURA OP2     P032  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+297  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+298  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+299  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+300  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+301  SALDATURA OP2     P050  ...                   0.0  1.571354e+09
+
+[301 rows x 14 columns]
+11:36:25,396 root INFO __________END CLEAN____________
+11:36:25,397 root INFO write csv into db... host localhost: port: 8086
+11:36:25,432 root INFO __________END Write____________
+11:36:25,432 root INFO _______________________________________
+11:36:25,432 root INFO analyze: WD191017165410-1A192900230.csv
+11:36:25,460 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  10.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P004    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P004    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,460 root INFO _______________________________________
+11:36:25,460 root INFO __________CSV AFTER CLEAN____________
+11:36:25,464 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+2    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+3    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+4    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+5    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+197  SALDATURA OP2     P022  ...                   0.0  1.571344e+09
+198  SALDATURA OP2     P022  ...                   0.0  1.571344e+09
+199  SALDATURA OP2     P022  ...                   0.0  1.571344e+09
+200  SALDATURA OP2     P023  ...                   0.0  1.571344e+09
+201  SALDATURA OP2     P023  ...                   0.0  1.571344e+09
+
+[201 rows x 14 columns]
+11:36:25,488 root INFO __________END CLEAN____________
+11:36:25,488 root INFO write csv into db... host localhost: port: 8086
+11:36:25,519 root INFO __________END Write____________
+11:36:25,519 root INFO _______________________________________
+11:36:25,519 root INFO analyze: WD191017165229-1A192900228.csv
+11:36:25,548 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  29.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P002    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P002    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,548 root INFO _______________________________________
+11:36:25,548 root INFO __________CSV AFTER CLEAN____________
+11:36:25,552 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+2    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+3    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+4    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+5    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+196  SALDATURA OP1     P015  ...                   0.0  1.571343e+09
+197  SALDATURA OP1     P015  ...                   0.0  1.571344e+09
+198  SALDATURA OP1     P015  ...                   0.0  1.571344e+09
+199  SALDATURA OP1     P016  ...                   0.0  1.571344e+09
+200  SALDATURA OP1     P016  ...                   0.0  1.571344e+09
+
+[200 rows x 14 columns]
+11:36:25,576 root INFO __________END CLEAN____________
+11:36:25,576 root INFO write csv into db... host localhost: port: 8086
+11:36:25,606 root INFO __________END Write____________
+11:36:25,606 root INFO _______________________________________
+11:36:25,606 root INFO analyze: WD191017165154-1A192900229.csv
+11:36:25,634 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  54.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P060    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P060    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,634 root INFO _______________________________________
+11:36:25,634 root INFO __________CSV AFTER CLEAN____________
+11:36:25,638 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P060   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P060   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571324e+09
+5   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571324e+09
+6   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571324e+09
+7   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+8   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+9   SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+10  SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+11  SALDATURA OP2     P060   NaN  ...      14.00                   0.0  1.571325e+09
+12  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+13  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+14  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+15  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571325e+09
+17  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+18  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+19  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+20  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+21  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+25  SALDATURA OP2     P085   NaN  ...      14.00                   0.0  1.571326e+09
+26  SALDATURA OP2     P061   NaN  ...       0.00                   0.0  1.571326e+09
+27  SALDATURA OP2     P061   NaN  ...       0.00                   0.0  1.571327e+09
+28  SALDATURA OP2     P062   NaN  ...       7.46                   0.0  1.571327e+09
+29  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP2     P062   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP2     P063   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P063   NaN  ...       0.00                   0.0  1.571327e+09
+
+[34 rows x 14 columns]
+11:36:25,662 root INFO __________END CLEAN____________
+11:36:25,662 root INFO write csv into db... host localhost: port: 8086
+11:36:25,687 root INFO __________END Write____________
+11:36:25,687 root INFO _______________________________________
+11:36:25,688 root INFO analyze: WD191017165115-1A192900229.csv
+11:36:25,714 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  15.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P103    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P103    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,714 root INFO _______________________________________
+11:36:25,715 root INFO __________CSV AFTER CLEAN____________
+11:36:25,718 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+2    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+3    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+4    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+5    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+111  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+112  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+113  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+114  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+115  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+
+[115 rows x 14 columns]
+11:36:25,741 root INFO __________END CLEAN____________
+11:36:25,741 root INFO write csv into db... host localhost: port: 8086
+11:36:25,770 root INFO __________END Write____________
+11:36:25,770 root INFO _______________________________________
+11:36:25,770 root INFO analyze: WD191017165508-1A192900230.csv
+11:36:25,798 root INFO Initial csv: -               0         1      2   ...   13    14   15
+0          START        19     10  ...  8.0  Type  1.0
+1          100ms       NaN    NaN  ...  NaN   NaN  NaN
+2        Program  Position  Error  ...  NaN   NaN  NaN
+3  SALDATURA OP2      P089    NaN  ...  NaN   NaN  NaN
+4  SALDATURA OP2      P089    NaN  ...  NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,798 root INFO _______________________________________
+11:36:25,798 root INFO __________CSV AFTER CLEAN____________
+11:36:25,801 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P089   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P089   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P089   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571324e+09
+5   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+6   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+7   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+8   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+9   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+10  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+11  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+12  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+13  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+14  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+15  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+16  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+17  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+18  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+19  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+20  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+21  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+22  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+23  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+24  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+25  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571327e+09
+26  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+27  SALDATURA OP2     P091   NaN  ...       7.46                   0.0  1.571327e+09
+28  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+29  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP2     P071   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP2     P071   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P071   NaN  ...       0.00                   0.0  1.571327e+09
+
+[34 rows x 14 columns]
+11:36:25,826 root INFO __________END CLEAN____________
+11:36:25,826 root INFO write csv into db... host localhost: port: 8086
+11:36:25,853 root INFO __________END Write____________
+11:36:25,853 root INFO _______________________________________
+11:36:25,853 root INFO analyze: WD191017165316-1A192900228.csv
+11:36:25,879 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  16.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P050    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P050    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,880 root INFO _______________________________________
+11:36:25,880 root INFO __________CSV AFTER CLEAN____________
+11:36:25,883 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P050   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P050   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P050   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+5   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+6   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+7   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+8   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+9   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+10  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+11  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+12  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+13  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+14  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+15  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+17  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+18  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+19  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+20  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+21  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P052   NaN  ...       0.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P052   NaN  ...       0.00                   0.0  1.571326e+09
+26  SALDATURA OP1     P053   NaN  ...       7.46                   0.0  1.571326e+09
+27  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571327e+09
+28  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571327e+09
+29  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP1     P054   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP1     P054   NaN  ...       0.00                   0.0  1.571327e+09
+
+[32 rows x 14 columns]
+11:36:25,907 root INFO __________END CLEAN____________
+11:36:25,907 root INFO write csv into db... host localhost: port: 8086
+11:36:25,933 root INFO __________END Write____________
+11:36:25,933 root INFO _______________________________________
+11:36:25,933 root INFO analyze: WD191017165201-1A192900229.csv
+11:36:25,960 root INFO Initial csv: -               0         1      2   ...   13    14   15
+0          START        19     10  ...  1.0  Type  1.0
+1          100ms       NaN    NaN  ...  NaN   NaN  NaN
+2        Program  Position  Error  ...  NaN   NaN  NaN
+3  SALDATURA OP2      P089    NaN  ...  NaN   NaN  NaN
+4  SALDATURA OP2      P089    NaN  ...  NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:25,960 root INFO _______________________________________
+11:36:25,960 root INFO __________CSV AFTER CLEAN____________
+11:36:25,964 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P089   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P089   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571324e+09
+4   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571324e+09
+5   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571324e+09
+6   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571324e+09
+7   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+8   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+9   SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+10  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+11  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+12  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+13  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+14  SALDATURA OP2     P089   NaN  ...       5.28                   0.0  1.571325e+09
+15  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571325e+09
+16  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571325e+09
+17  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+18  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+19  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+20  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+21  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+22  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+23  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+24  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+25  SALDATURA OP2     P090   NaN  ...       5.28                   0.0  1.571326e+09
+26  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571326e+09
+27  SALDATURA OP2     P091   NaN  ...       7.46                   0.0  1.571327e+09
+28  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+29  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P091   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP2     P071   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP2     P071   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P071   NaN  ...       0.00                   0.0  1.571327e+09
+
+[34 rows x 14 columns]
+11:36:25,988 root INFO __________END CLEAN____________
+11:36:25,988 root INFO write csv into db... host localhost: port: 8086
+11:36:26,13 root INFO __________END Write____________
+11:36:26,13 root INFO _______________________________________
+11:36:26,13 root INFO analyze: WD191017165243-1A192900228.csv
+11:36:26,44 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  43.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P088    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P088    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,44 root INFO _______________________________________
+11:36:26,44 root INFO __________CSV AFTER CLEAN____________
+11:36:26,48 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+2    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+3    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+4    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+5    SALDATURA OP1     P088  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+127  SALDATURA OP1     P097  ...                   0.0  1.571337e+09
+128  SALDATURA OP1     P097  ...                   0.0  1.571337e+09
+129  SALDATURA OP1     P097  ...                   0.0  1.571337e+09
+130  SALDATURA OP1     P097  ...                   0.0  1.571337e+09
+131  SALDATURA OP1     P097  ...                   0.0  1.571337e+09
+
+[131 rows x 14 columns]
+11:36:26,71 root INFO __________END CLEAN____________
+11:36:26,71 root INFO write csv into db... host localhost: port: 8086
+11:36:26,101 root INFO __________END Write____________
+11:36:26,101 root INFO _______________________________________
+11:36:26,101 root INFO analyze: WD191017164506-1A192900227.csv
+11:36:26,129 root INFO Initial csv: -               0         1      2   ...   13    14   15
+0          START        19     10  ...  6.0  Type  1.0
+1          100ms       NaN    NaN  ...  NaN   NaN  NaN
+2        Program  Position  Error  ...  NaN   NaN  NaN
+3  SALDATURA OP1      P109    NaN  ...  NaN   NaN  NaN
+4  SALDATURA OP1      P109    NaN  ...  NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,129 root INFO _______________________________________
+11:36:26,129 root INFO __________CSV AFTER CLEAN____________
+11:36:26,133 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP1     P109  ...                   0.0  1.571323e+09
+2    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+3    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+4    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+5    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+275  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+276  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+277  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+278  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+279  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+
+[279 rows x 14 columns]
+11:36:26,157 root INFO __________END CLEAN____________
+11:36:26,157 root INFO write csv into db... host localhost: port: 8086
+11:36:26,191 root INFO __________END Write____________
+11:36:26,191 root INFO _______________________________________
+11:36:26,191 root INFO analyze: WD191017165150-1A192900229.csv
+11:36:26,216 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  50.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P053    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P053    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,216 root INFO _______________________________________
+11:36:26,217 root INFO __________CSV AFTER CLEAN____________
+11:36:26,220 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P053   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P053   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P053   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P053   NaN  ...      14.00                   0.0  1.571324e+09
+5   SALDATURA OP2     P053   NaN  ...      14.00                   0.0  1.571324e+09
+6   SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571324e+09
+7   SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+8   SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+9   SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+10  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+11  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+12  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+13  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+14  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+15  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+17  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+18  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+19  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+20  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+21  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+25  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+26  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+27  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571327e+09
+28  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571327e+09
+29  SALDATURA OP2     P054   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP2     P054   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P055   NaN  ...       7.46                   0.0  1.571327e+09
+32  SALDATURA OP2     P055   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP2     P055   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P055   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP2     P056   NaN  ...       0.00                   0.0  1.571327e+09
+36  SALDATURA OP2     P056   NaN  ...       0.00                   0.0  1.571327e+09
+37  SALDATURA OP2     P057   NaN  ...       0.00                   0.0  1.571328e+09
+
+[37 rows x 14 columns]
+11:36:26,246 root INFO __________END CLEAN____________
+11:36:26,246 root INFO write csv into db... host localhost: port: 8086
+11:36:26,271 root INFO __________END Write____________
+11:36:26,271 root INFO _______________________________________
+11:36:26,271 root INFO analyze: WD191017165102-1A192900229.csv
+11:36:26,300 root INFO Initial csv: -               0         1      2   ...   13    14   15
+0          START        19     10  ...  2.0  Type  1.0
+1          100ms       NaN    NaN  ...  NaN   NaN  NaN
+2        Program  Position  Error  ...  NaN   NaN  NaN
+3  SALDATURA OP2      P004    NaN  ...  NaN   NaN  NaN
+4  SALDATURA OP2      P004    NaN  ...  NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,300 root INFO _______________________________________
+11:36:26,300 root INFO __________CSV AFTER CLEAN____________
+11:36:26,304 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+2    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+3    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+4    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+5    SALDATURA OP2     P004  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+197  SALDATURA OP2     P022  ...                   0.0  1.571343e+09
+198  SALDATURA OP2     P022  ...                   0.0  1.571344e+09
+199  SALDATURA OP2     P023  ...                   0.0  1.571344e+09
+200  SALDATURA OP2     P023  ...                   0.0  1.571344e+09
+201  SALDATURA OP2     P023  ...                   0.0  1.571344e+09
+
+[201 rows x 14 columns]
+11:36:26,326 root INFO __________END CLEAN____________
+11:36:26,327 root INFO write csv into db... host localhost: port: 8086
+11:36:26,360 root INFO __________END Write____________
+11:36:26,360 root INFO _______________________________________
+11:36:26,360 root INFO analyze: WD191017165312-1A192900228.csv
+11:36:26,387 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  12.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P109    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P109    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,387 root INFO _______________________________________
+11:36:26,387 root INFO __________CSV AFTER CLEAN____________
+11:36:26,391 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+2    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+3    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+4    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+5    SALDATURA OP1     P109  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+274  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+275  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+276  SALDATURA OP1     P043  ...                   0.0  1.571351e+09
+277  SALDATURA OP1     P043  ...                   0.0  1.571352e+09
+278  SALDATURA OP1     P043  ...                   0.0  1.571352e+09
+
+[278 rows x 14 columns]
+11:36:26,414 root INFO __________END CLEAN____________
+11:36:26,414 root INFO write csv into db... host localhost: port: 8086
+11:36:26,448 root INFO __________END Write____________
+11:36:26,448 root INFO _______________________________________
+11:36:26,448 root INFO analyze: WD191017165328-1A192900228.csv
+11:36:26,474 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  28.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P071    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P071    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,474 root INFO _______________________________________
+11:36:26,474 root INFO __________CSV AFTER CLEAN____________
+11:36:26,477 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P071   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P071   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+4   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+5   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571324e+09
+6   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+7   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+8   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+9   SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+10  SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+11  SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+12  SALDATURA OP1     P071   NaN  ...      10.45                   0.0  1.571325e+09
+13  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+14  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+15  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571325e+09
+16  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571326e+09
+17  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571326e+09
+18  SALDATURA OP1     P102   NaN  ...      10.45                   0.0  1.571326e+09
+19  SALDATURA OP1     P072   NaN  ...       0.00                   0.0  1.571326e+09
+20  SALDATURA OP1     P072   NaN  ...       0.00                   0.0  1.571326e+09
+21  SALDATURA OP1     P072   NaN  ...       7.46                   0.0  1.571326e+09
+22  SALDATURA OP1     P072   NaN  ...       0.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571326e+09
+26  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571327e+09
+27  SALDATURA OP1     P073   NaN  ...       0.00                   0.0  1.571327e+09
+
+[27 rows x 14 columns]
+11:36:26,500 root INFO __________END CLEAN____________
+11:36:26,500 root INFO write csv into db... host localhost: port: 8086
+11:36:26,525 root INFO __________END Write____________
+11:36:26,525 root INFO _______________________________________
+11:36:26,525 root INFO analyze: WD191017165334-1A192900228.csv
+11:36:26,554 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  34.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P077    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P077    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,554 root INFO _______________________________________
+11:36:26,554 root INFO __________CSV AFTER CLEAN____________
+11:36:26,557 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P077   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P077   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P077   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571324e+09
+5   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571324e+09
+6   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571325e+09
+7   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571325e+09
+8   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571325e+09
+9   SALDATURA OP1     P077   NaN  ...      10.45                   0.0  1.571325e+09
+10  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+11  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+12  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+13  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+14  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+15  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571325e+09
+16  SALDATURA OP1     P103   NaN  ...      10.45                   0.0  1.571326e+09
+17  SALDATURA OP1     P078   NaN  ...       0.00                   0.0  1.571326e+09
+18  SALDATURA OP1     P078   NaN  ...       7.46                   0.0  1.571326e+09
+19  SALDATURA OP1     P079   NaN  ...       0.00                   0.0  1.571326e+09
+20  SALDATURA OP1     P079   NaN  ...       0.00                   0.0  1.571326e+09
+21  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+22  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P075   NaN  ...       0.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P074   NaN  ...       0.00                   0.0  1.571326e+09
+
+[25 rows x 14 columns]
+11:36:26,579 root INFO __________END CLEAN____________
+11:36:26,580 root INFO write csv into db... host localhost: port: 8086
+11:36:26,603 root INFO __________END Write____________
+11:36:26,603 root INFO _______________________________________
+11:36:26,604 root INFO analyze: WD191017165325-1A192900228.csv
+11:36:26,630 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  25.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P065    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P065    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,630 root INFO _______________________________________
+11:36:26,630 root INFO __________CSV AFTER CLEAN____________
+11:36:26,633 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P065   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P065   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+4   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+5   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571324e+09
+6   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+7   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+8   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+9   SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+10  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+11  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+12  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+13  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+14  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+15  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571325e+09
+16  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571326e+09
+17  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571326e+09
+18  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571326e+09
+19  SALDATURA OP1     P065   NaN  ...       5.28                   0.0  1.571326e+09
+20  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+21  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+22  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+23  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+24  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+25  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571326e+09
+26  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571327e+09
+27  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571327e+09
+28  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571327e+09
+29  SALDATURA OP1     P100   NaN  ...       5.28                   0.0  1.571327e+09
+30  SALDATURA OP1     P067   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP1     P069   NaN  ...       7.46                   0.0  1.571327e+09
+32  SALDATURA OP1     P068   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP1     P068   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP1     P068   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571327e+09
+36  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571328e+09
+37  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571328e+09
+38  SALDATURA OP1     P070   NaN  ...       0.00                   0.0  1.571328e+09
+
+[38 rows x 14 columns]
+11:36:26,661 root INFO __________END CLEAN____________
+11:36:26,661 root INFO write csv into db... host localhost: port: 8086
+11:36:26,687 root INFO __________END Write____________
+11:36:26,687 root INFO _______________________________________
+11:36:26,687 root INFO analyze: WD191017165457-1A192900230.csv
+11:36:26,714 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  57.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P053    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P053    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,714 root INFO _______________________________________
+11:36:26,715 root INFO __________CSV AFTER CLEAN____________
+11:36:26,718 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P053   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P053   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P053   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P053   NaN  ...       2.00                   0.6  1.571324e+09
+5   SALDATURA OP2     P053   NaN  ...      14.00                  16.8  1.571324e+09
+6   SALDATURA OP2     P053   NaN  ...      14.00                  16.8  1.571325e+09
+7   SALDATURA OP2     P084   NaN  ...      14.00                  16.8  1.571325e+09
+8   SALDATURA OP2     P084   NaN  ...      14.00                  16.8  1.571325e+09
+9   SALDATURA OP2     P084   NaN  ...      14.00                  16.8  1.571325e+09
+10  SALDATURA OP2     P084   NaN  ...      14.00                  16.8  1.571325e+09
+11  SALDATURA OP2     P084   NaN  ...      14.00                  16.8  1.571325e+09
+12  SALDATURA OP2     P084   NaN  ...      14.00                  16.8  1.571325e+09
+13  SALDATURA OP2     P084   NaN  ...      14.00                  16.8  1.571325e+09
+14  SALDATURA OP2     P084   NaN  ...      14.00                  16.2  1.571325e+09
+15  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+17  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+18  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+19  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+20  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+21  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+25  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571326e+09
+26  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571327e+09
+27  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571327e+09
+28  SALDATURA OP2     P084   NaN  ...      14.00                   0.0  1.571327e+09
+29  SALDATURA OP2     P054   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP2     P054   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P054   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP2     P055   NaN  ...       7.46                   0.0  1.571327e+09
+33  SALDATURA OP2     P055   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P055   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP2     P056   NaN  ...       0.00                   0.0  1.571327e+09
+36  SALDATURA OP2     P056   NaN  ...       0.00                   0.0  1.571328e+09
+37  SALDATURA OP2     P056   NaN  ...       0.00                   0.0  1.571328e+09
+38  SALDATURA OP2     P057   NaN  ...       0.00                   0.0  1.571328e+09
+
+[38 rows x 14 columns]
+11:36:26,743 root INFO __________END CLEAN____________
+11:36:26,743 root INFO write csv into db... host localhost: port: 8086
+11:36:26,770 root INFO __________END Write____________
+11:36:26,770 root INFO _______________________________________
+11:36:26,770 root INFO analyze: WD191017164438-1A192900227.csv
+11:36:26,798 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  38.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P027    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P027    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,798 root INFO _______________________________________
+11:36:26,799 root INFO __________CSV AFTER CLEAN____________
+11:36:26,802 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P027   NaN  ...       2.00                   0.0  1.571323e+09
+2   SALDATURA OP1     P027   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+4   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+5   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+6   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+7   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+8   SALDATURA OP1     P108   NaN  ...       0.00                   0.0  1.571324e+09
+9   SALDATURA OP1     P108   NaN  ...       0.00                   0.0  1.571324e+09
+10  SALDATURA OP1     P108   NaN  ...       7.46                   0.0  1.571324e+09
+
+[10 rows x 14 columns]
+11:36:26,822 root INFO __________END CLEAN____________
+11:36:26,822 root INFO write csv into db... host localhost: port: 8086
+11:36:26,846 root INFO __________END Write____________
+11:36:26,846 root INFO _______________________________________
+11:36:26,846 root INFO analyze: WD191017165422-1A192900230.csv
+11:36:26,874 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  22.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P103    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P103    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,874 root INFO _______________________________________
+11:36:26,874 root INFO __________CSV AFTER CLEAN____________
+11:36:26,878 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+2    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+3    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+4    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+5    SALDATURA OP2     P103  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+111  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+112  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+113  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+114  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+115  SALDATURA OP2     P113  ...                   0.0  1.571335e+09
+
+[115 rows x 14 columns]
+11:36:26,900 root INFO __________END CLEAN____________
+11:36:26,900 root INFO write csv into db... host localhost: port: 8086
+11:36:26,928 root INFO __________END Write____________
+11:36:26,928 root INFO _______________________________________
+11:36:26,928 root INFO analyze: WD191017165515-1A192900230.csv
+11:36:26,954 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  15.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P077    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P077    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:26,954 root INFO _______________________________________
+11:36:26,954 root INFO __________CSV AFTER CLEAN____________
+11:36:26,957 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P077   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P077   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P077   NaN  ...      10.45                   0.0  1.571324e+09
+4   SALDATURA OP2     P077   NaN  ...      10.45                   0.0  1.571324e+09
+5   SALDATURA OP2     P077   NaN  ...      10.45                   0.0  1.571325e+09
+6   SALDATURA OP2     P077   NaN  ...      10.45                   0.0  1.571325e+09
+7   SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+8   SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+9   SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+10  SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+11  SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+12  SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+13  SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+14  SALDATURA OP2     P092   NaN  ...      10.45                   0.0  1.571325e+09
+15  SALDATURA OP2     P078   NaN  ...       0.00                   0.0  1.571326e+09
+16  SALDATURA OP2     P078   NaN  ...       0.00                   0.0  1.571326e+09
+17  SALDATURA OP2     P072   NaN  ...       7.46                   0.0  1.571326e+09
+18  SALDATURA OP2     P072   NaN  ...       0.00                   0.0  1.571326e+09
+19  SALDATURA OP2     P072   NaN  ...       0.00                   0.0  1.571326e+09
+20  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+21  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+22  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+23  SALDATURA OP2     P073   NaN  ...       0.00                   0.0  1.571326e+09
+24  SALDATURA OP2    GP007   NaN  ...       0.00                   0.0  1.571326e+09
+
+[24 rows x 14 columns]
+11:36:26,981 root INFO __________END CLEAN____________
+11:36:26,981 root INFO write csv into db... host localhost: port: 8086
+11:36:27,6 root INFO __________END Write____________
+11:36:27,6 root INFO _______________________________________
+11:36:27,6 root INFO analyze: WD191017165244-1A192900228.csv
+11:36:27,32 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  44.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P027    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P027    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:27,32 root INFO _______________________________________
+11:36:27,32 root INFO __________CSV AFTER CLEAN____________
+11:36:27,35 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P027   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P027   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P027   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+5   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+6   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571324e+09
+7   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571325e+09
+8   SALDATURA OP1     P027   NaN  ...      13.30                   0.0  1.571325e+09
+9   SALDATURA OP1     P108   NaN  ...       0.00                   0.0  1.571325e+09
+10  SALDATURA OP1     P108   NaN  ...       7.46                   0.0  1.571325e+09
+11  SALDATURA OP1     P108   NaN  ...       0.00                   0.0  1.571325e+09
+
+[11 rows x 14 columns]
+11:36:27,58 root INFO __________END CLEAN____________
+11:36:27,58 root INFO write csv into db... host localhost: port: 8086
+11:36:27,84 root INFO __________END Write____________
+11:36:27,84 root INFO _______________________________________
+11:36:27,84 root INFO analyze: WD191017164511-1A192900227.csv
+11:36:27,110 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  11.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P050    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P050    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:27,110 root INFO _______________________________________
+11:36:27,110 root INFO __________CSV AFTER CLEAN____________
+11:36:27,113 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP1     P050   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP1     P050   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP1     P050   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+5   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+6   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+7   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+8   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+9   SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+10  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571324e+09
+11  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+12  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+13  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+14  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+15  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+16  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+17  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+18  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+19  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+20  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571325e+09
+21  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+22  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+23  SALDATURA OP1     P050   NaN  ...      14.00                   0.0  1.571326e+09
+24  SALDATURA OP1     P052   NaN  ...       0.00                   0.0  1.571326e+09
+25  SALDATURA OP1     P052   NaN  ...       0.00                   0.0  1.571326e+09
+26  SALDATURA OP1     P053   NaN  ...       7.46                   0.0  1.571326e+09
+27  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571326e+09
+28  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571326e+09
+29  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571326e+09
+30  SALDATURA OP1     P053   NaN  ...       0.00                   0.0  1.571326e+09
+31  SALDATURA OP1     P054   NaN  ...       0.00                   0.0  1.571327e+09
+32  SALDATURA OP1     P054   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP1     P054   NaN  ...       0.00                   0.0  1.571327e+09
+
+[33 rows x 14 columns]
+11:36:27,137 root INFO __________END CLEAN____________
+11:36:27,137 root INFO write csv into db... host localhost: port: 8086
+11:36:27,162 root INFO __________END Write____________
+11:36:27,162 root INFO _______________________________________
+11:36:27,162 root INFO analyze: WD191017165158-1A192900229.csv
+11:36:27,190 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  58.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP2      P086    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP2      P086    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:27,190 root INFO _______________________________________
+11:36:27,190 root INFO __________CSV AFTER CLEAN____________
+11:36:27,193 root INFO 0         Program Position Error  ... Wire speed Instant arc-lack time     Timestamp
+1   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+2   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+3   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+4   SALDATURA OP2     P086   NaN  ...       2.00                   0.0  1.571324e+09
+5   SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571324e+09
+6   SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571324e+09
+7   SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+8   SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+9   SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+10  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+11  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+12  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+13  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+14  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+15  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+16  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571325e+09
+17  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571326e+09
+18  SALDATURA OP2     P086   NaN  ...       5.28                   0.0  1.571326e+09
+19  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+20  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+21  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+22  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+23  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+24  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+25  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+26  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571326e+09
+27  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571327e+09
+28  SALDATURA OP2     P087   NaN  ...       5.28                   0.0  1.571327e+09
+29  SALDATURA OP2     P088   NaN  ...       0.00                   0.0  1.571327e+09
+30  SALDATURA OP2     P088   NaN  ...       0.00                   0.0  1.571327e+09
+31  SALDATURA OP2     P066   NaN  ...       7.46                   0.0  1.571327e+09
+32  SALDATURA OP2     P066   NaN  ...       0.00                   0.0  1.571327e+09
+33  SALDATURA OP2     P068   NaN  ...       0.00                   0.0  1.571327e+09
+34  SALDATURA OP2     P068   NaN  ...       0.00                   0.0  1.571327e+09
+35  SALDATURA OP2     P076   NaN  ...       0.00                   0.0  1.571327e+09
+36  SALDATURA OP2     P076   NaN  ...       0.00                   0.0  1.571327e+09
+37  SALDATURA OP2     P076   NaN  ...       0.00                   0.0  1.571328e+09
+38  SALDATURA OP2     P089   NaN  ...       0.00                   0.0  1.571328e+09
+
+[38 rows x 14 columns]
+11:36:27,218 root INFO __________END CLEAN____________
+11:36:27,218 root INFO write csv into db... host localhost: port: 8086
+11:36:27,243 root INFO __________END Write____________
+11:36:27,243 root INFO _______________________________________
+11:36:27,243 root INFO analyze: WD191017164423-1A192900227.csv
+11:36:27,270 root INFO Initial csv: -               0         1      2   ...    13    14   15
+0          START        19     10  ...  23.0  Type  1.0
+1          100ms       NaN    NaN  ...   NaN   NaN  NaN
+2        Program  Position  Error  ...   NaN   NaN  NaN
+3  SALDATURA OP1      P002    NaN  ...   NaN   NaN  NaN
+4  SALDATURA OP1      P002    NaN  ...   NaN   NaN  NaN
+
+[5 rows x 16 columns]
+11:36:27,270 root INFO _______________________________________
+11:36:27,270 root INFO __________CSV AFTER CLEAN____________
+11:36:27,274 root INFO 0          Program Position  ... Instant arc-lack time     Timestamp
+1    SALDATURA OP1     P002  ...                   0.0  1.571323e+09
+2    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+3    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+4    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+5    SALDATURA OP1     P002  ...                   0.0  1.571324e+09
+..             ...      ...  ...                   ...           ...
+196  SALDATURA OP1     P014  ...                   0.0  1.571343e+09
+197  SALDATURA OP1     P015  ...                   0.0  1.571343e+09
+198  SALDATURA OP1     P015  ...                   0.0  1.571343e+09
+199  SALDATURA OP1     P015  ...                   0.0  1.571343e+09
+200  SALDATURA OP1     P016  ...                   0.0  1.571343e+09
+
+[200 rows x 14 columns]
+11:36:27,296 root INFO __________END CLEAN____________
+11:36:27,296 root INFO write csv into db... host localhost: port: 8086
+11:36:27,327 root INFO __________END Write____________
