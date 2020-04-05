@@ -1,6 +1,8 @@
 from influxdb import InfluxDBClient
 from datetime import datetime
 from datetime import timedelta
+from Model.machine import Machine
+import json
 
 
 class ItemDatabase:
@@ -14,7 +16,7 @@ client = InfluxDBClient(database='newTest', host='localhost', port=8086, usernam
 rs = list((client.query(
     "SELECT * FROM prova4 WHERE time >= '2019-12-05T00:00:00Z' AND time < '2019-12-06T00:00:00Z'")).get_points())
 
-f = open("testb.txt", "w+")
+f = open("HandlerDatabase/testb.txt", "w+")
 old = None
 diff = timedelta(seconds=0, minutes=0, hours=0)
 differences = list()
@@ -57,3 +59,6 @@ while start <= end:
                 count += y.time_insert - x.time_insert
     #print("Dalle " + str(start) + " alle " + str(new) + " ci sono stati :" + str(count))
     start += timedelta(hours=1)
+
+x = Machine("OP50", "ok", True, True, None, None, None, None, None, 500, 500, 500, 500)
+print(x.toJSON())

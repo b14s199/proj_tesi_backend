@@ -1,6 +1,6 @@
 import pandas as pd
-from ClearDataframe import clean_data_frame
-from Influx import write_into_influx
+from HandlerDatabase.ClearDataframe import clean_data_frame
+from HandlerDatabase.Influx import write_into_influx
 import os
 import glob
 import logging
@@ -50,7 +50,7 @@ def main(argv):
         host ="localhost"
         port = 8086
         port = int(port)
-        path = "/Users/biagioboi/Desktop/Pico-ProFirstSupply-master/FilePuliti8000v2.0/filePuliti8000SenzaErrore"
+        path = "/Users/biagioboi/Desktop/tesi/proj_tesi_backend/HandlerDatabase/FilePuliti8000v2.0/filePuliti8000SenzaErrore"
         pathLog = "pathLog"
         path = path
         logging.basicConfig(filename=pathLog,

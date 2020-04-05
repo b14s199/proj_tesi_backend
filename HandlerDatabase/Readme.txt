@@ -1,4 +1,4 @@
-Installazione manueale delle librerie
+Installazione manuale delle librerie
 Installare la libreria pandas per python.
 pip install pandas (Se si possiede il gestore pip)
 altrimenti installare il gestore pip
