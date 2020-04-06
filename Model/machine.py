@@ -2,7 +2,7 @@ import json
 
 
 class Machine:
-    def __init__(self, name, status, powerOn, start, beatingSpeedPerHours, startMouldAssembly, endMouldAssembly, changeOfWorkingShift, secondChangeOfWorkingShift, numExpectedProduct, numProduct, numGoodProduct, numBadProduct):
+    def __init__(self, name, status, powerOn, start, beatingSpeedPerHours, startMouldAssembly, endMouldAssembly, changeOfWorkingShift, secondChangeOfWorkingShift, numExpectedProduct, numProduct, numGoodProduct, numBadProduct, oee):
         self.name = name
         self.status = status
         self.powerOn = powerOn
@@ -16,6 +16,7 @@ class Machine:
         self.numProduct = numProduct
         self.numGoodProduct = numGoodProduct
         self.numBadProduct = numBadProduct
+        self.oee = oee
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__,
