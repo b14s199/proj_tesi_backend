@@ -22,6 +22,7 @@ diff = timedelta(seconds=0, minutes=0, hours=0)
 differences = list()
 
 for x in rs:
+    print(x, file=f)
     if len(x["time"]) == 22:
         # format transformation
         x["time"] = x["time"][:-3] + "Z"

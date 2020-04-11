@@ -17,6 +17,7 @@ def updateMachineStatus(machine):
     machine_ref = db.collection('macchinario').doc(machine.name)
     machine_ref.update(machine.toJSON())
 
+
 def storeMachine(machine):
     db = connect()
     machine_ref = db.collection('macchinario').doc(machine.name)
