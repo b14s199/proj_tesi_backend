@@ -1,23 +1,32 @@
-import json
+from Model.oee import OEE
+import copy
 
 
 class Machine:
-    def __init__(self, name, status, powerOn, start, beatingSpeedPerHours, startMouldAssembly, endMouldAssembly, changeOfWorkingShift, secondChangeOfWorkingShift, numExpectedProduct, numProduct, numGoodProduct, numBadProduct, oee):
-        self.name = name
-        self.status = status
-        self.powerOn = powerOn
-        self.start = start
-        self.beatingSpeedPerHours = beatingSpeedPerHours
-        self.startMouldAssembly = startMouldAssembly
-        self.endMouldAssembly = endMouldAssembly
-        self.changeOfWorkingShift = changeOfWorkingShift
-        self.secondChangeOfWorkingShift = secondChangeOfWorkingShift
-        self.numExpectedProduct = numExpectedProduct
-        self.numProduct = numProduct
-        self.numGoodProduct = numGoodProduct
-        self.numBadProduct = numBadProduct
-        self.oee = oee
+    def __init__(self):
+        pass
+
+    def addOEE(self, oee, period_id):
+        self.oee.update(period_id, oee)
+
+    @staticmethod
+    def from_dict(source):
+        obj = Machine()
+        for x in source:
+            if x == "oee":
+                list_oee = dict()
+                for y in source[x]:
+                    obj_oee = OEE()
+                    for z in source[x][y]:
+                        setattr(obj_oee, z, source[x][y][z])
+                    list_oee[y] = obj_oee
+                setattr(obj, x, list_oee)
+            else:
+                setattr(obj, x, source[x])
+        return obj
 
     def toJSON(self):
-        return json.dumps(self, default=lambda o: o.__dict__,
-                          sort_keys=False, indent=2)
+        dict = copy.deepcopy(self.__dict__)
+        for x in dict['oee']:
+            dict['oee'][x] = dict['oee'][x].__dict__
+        return dict
