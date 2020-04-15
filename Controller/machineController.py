@@ -14,11 +14,11 @@ def getAllMachines():
 
 def updateMachineStatus(machine):
     db = connect()
-    machine_ref = db.collection('macchinario').doc(machine.name)
+    machine_ref = db.collection('macchinario').document(machine.name)
     machine_ref.update(machine.toJSON())
 
 
 def storeMachine(machine):
     db = connect()
-    machine_ref = db.collection('macchinario').doc(machine.name)
+    machine_ref = db.collection('macchinario').document(machine.name)
     machine_ref.set(machine.toJSON())

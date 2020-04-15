@@ -3,14 +3,18 @@ from firebase_admin import firestore
 from firebase_admin import credentials
 from influxdb import InfluxDBClient
 
+firestore_connection = None
+
 
 def connect():
+    global firestore_connection
     pathMac = "/Users/biagioboi/Desktop/tesi/proj_tesi_backend/Config/privateKeyFirestore.json"
     pathWin = "D:\\xampp\\htdocs\\proj_tesi_backend\\"
-    cred = credentials.Certificate(pathMac)
-    firebase_admin.initialize_app(cred)
-    db = firestore.client()
-    return db
+    if firestore_connection is None:
+        cred = credentials.Certificate(pathMac)
+        firebase_admin.initialize_app(cred)
+        firestore_connection = firestore.client()
+    return firestore_connection
 
 
 def influxDB():
