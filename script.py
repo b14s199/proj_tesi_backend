@@ -23,10 +23,20 @@ while True:
                 "SELECT * FROM prova4 WHERE time >= '" + prev_time.strftime("%Y-%m-%dT%H:%M:%SZ") + "' AND "
                 + "time < '" + new_time.strftime("%Y-%m-%dT%H:%M:%SZ") + "' AND "
                 + "Program = '" + machine.name + "'").get_points())  # get all machine data in considered period
+            if len(rs) > 0:
+                first_production_time = datetime.strptime(rs[0]["time"], '%Y-%m-%dT%H:%M:%SZ')
+                diff_between_time = first_production_time - prev_time
+                if diff_between_time > timedelta(minutes=1):
+                    current_good_time = diff_between_time
+                    machine.last_production_time = rs[0]["time"]
+                else:
+                    current_good_time = timedelta(seconds=0)
+            else:
+                current_good_time = timedelta(seconds=0)
             last_traciability_code = machine.last_traciability_code
             last_production_time = datetime.strptime(machine.last_production_time, '%Y-%m-%dT%H:%M:%SZ')
             current_good_pieces, current_bad_pieces, error = 0, 0, False
-            current_good_time, current_wasted_time = timedelta(seconds=0), timedelta(seconds=0)
+            current_wasted_time = timedelta(seconds=0)
             for data in rs:
                 if len(data["time"]) == 22:  # if the time includes milliseconds
                     data["time"] = data["time"][:-3] + "Z"
@@ -49,7 +59,8 @@ while True:
                 if data["Error"] == 1:
                     current_bad_pieces += 1
                     error = True
-        machine.last_production_time = last_production_time.strftime('%Y-%m-%dT%H:%M:%SZ')
+        current_good_time += new_time - last_production_time
+        machine.last_production_time = new_time.strftime('%Y-%m-%dT%H:%M:%SZ')
         print(current_good_time, current_wasted_time, current_good_pieces, current_bad_pieces)
         prev_time = new_time
     machine.last_production_time = prev_time.strftime('%Y-%m-%dT%H:%M:%SZ')

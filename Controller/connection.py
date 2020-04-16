@@ -9,9 +9,9 @@ firestore_connection = None
 def connect():
     global firestore_connection
     pathMac = "/Users/biagioboi/Desktop/tesi/proj_tesi_backend/Config/privateKeyFirestore.json"
-    pathWin = "D:\\xampp\\htdocs\\proj_tesi_backend\\"
+    pathWin = "D:\\xampp\\htdocs\\proj_tesi_backend\\Config\\privateKeyFirestore.json"
     if firestore_connection is None:
-        cred = credentials.Certificate(pathMac)
+        cred = credentials.Certificate(pathWin)
         firebase_admin.initialize_app(cred)
         firestore_connection = firestore.client()
     return firestore_connection
