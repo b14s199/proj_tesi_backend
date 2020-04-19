@@ -21,7 +21,7 @@ class bcolors:
 
 
 # for simulating purpose we define actual time, in future this date it's now date
-date = datetime(year=2019, month=12, day=5, hour=20, minute=30, second=0, microsecond=0)
+date = datetime(year=2019, month=12, day=5, hour=23, minute=59, second=30, microsecond=0)
 
 machines = machineController.getAllMachines()
 prev_time = date.replace(hour=0, minute=0, second=0, microsecond=0)  # to obtain the first daily date
@@ -31,19 +31,25 @@ while len(machines) > 0:
     dateLimit = date.replace(minute=0, second=0, microsecond=0)
 
     # cycle till we have reach the limit previously calculated
-    while prev_time <= dateLimit:
+    while prev_time < dateLimit:
         new_time = prev_time + timedelta(hours=1)
-        print(f"\n{bcolors.WARNING}Starting hour: {str(prev_time)} ---- Ending hour: {str(new_time)}{bcolors.ENDC}")
+        print(f"\nStarting hour: {str(prev_time)} ---- Ending hour: {str(new_time)}")
         influx = influxDB()
 
         # foreach machine in db we're going to update relative oee
         for machine in machines:
             machine = machines[machine]
             list_hour_detail = list()
-            rs = list(influx.query(
-                "SELECT * FROM prova4 WHERE time >= '" + prev_time.strftime("%Y-%m-%dT%H:%M:%SZ") + "' AND "
-                + "time < '" + new_time.strftime("%Y-%m-%dT%H:%M:%SZ") + "' AND "
-                + "Program = '" + machine.name + "'").get_points())  # get all machine data in considered period
+            toFind = ""
+            for z in machine.program:
+                toFind += f"Program = '{z}' OR "
+            if len(toFind) == 0:
+                continue
+            else:
+                toFind = toFind[:-4]
+            rs = list(influx.query("SELECT * FROM prova4 WHERE time >= '{}' AND time < '{}' AND ({})".format(
+                prev_time.strftime("%Y-%m-%dT%H:%M:%SZ"), new_time.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                toFind)).get_points())  # get all machine data in considered period
             if len(rs) > 0:
                 first_production_time = datetime.strptime(rs[0]["time"], '%Y-%m-%dT%H:%M:%SZ')
                 diff_between_time = first_production_time - prev_time
@@ -99,23 +105,44 @@ while len(machines) > 0:
                     current_bad_pieces += 1
                     error = True
 
-        # adding the last off shift to complete the period and update the last production time
-        x = HourDetail(status="off", startHour=last_production_time, endHour=new_time)
-        list_hour_detail.append(x)
-        machine.last_production_time = new_time.strftime('%Y-%m-%dT%H:%M:%SZ')
+            # adding the last off shift to complete the period and update the last production time
+            x = HourDetail(status="off", startHour=machine.last_production_time, endHour=new_time)
+            list_hour_detail.append(x)
+            machine.last_production_time = new_time.strftime('%Y-%m-%dT%H:%M:%SZ')
+            machine.last_available_oee = str(prev_time)
 
-        # declare a new OEE object about the current period and add it to the machine
-        oee = OEE(good_pieces=current_good_pieces, bad_pieces=current_bad_pieces, hour_detail=list_hour_detail)
-        machine.addOEE(oee, str(prev_time))
+            # declare a new OEE object about the current period and add it to the machine
+            oee = OEE(good_pieces=current_good_pieces, bad_pieces=current_bad_pieces, hour_detail=list_hour_detail)
+            if current_good_time.total_seconds() + current_wasted_time.total_seconds() > 0 and current_good_pieces + current_bad_pieces > 0:
+                oee.availability = round(current_good_time.total_seconds() / (
+                        current_good_time.total_seconds() + current_wasted_time.total_seconds()) * 100, 2)
+                oee.performance = round(90 * current_good_pieces / current_good_time.total_seconds() * 100, 2)
+                oee.quality = round(current_good_pieces / (current_bad_pieces + current_good_pieces) * 100, 2)
+                oee.general = round(oee.availability * oee.performance * oee.quality / 10000, 2)
+            else:
+                oee.availability = 0
+                oee.performance = 0
+                oee.quality = 0
+                oee.general = 0
+            if oee.general == 0:
+                oee.status = "off"
+            elif oee.general < 30:
+                oee.status = "error"
+            elif oee.general < 50:
+                oee.status = "warning"
+            else:
+                oee.status = "run"
+            machine.addOEE(oee, str(prev_time))
 
-        # info print
-        print(f"{bcolors.OKBLUE}Products OK: {oee.good_pieces}, Products KO: {oee.bad_pieces}, Wasted time: {current_wasted_time}, Running time: {current_good_time}")
+            machineController.updateMachineStatus(machine)  # update machine data
 
+            # info print
+            print(
+                f"{machine.name} ---- {bcolors.OKBLUE}Products OK: {oee.good_pieces}, {bcolors.FAIL}Products KO: {oee.bad_pieces}, {bcolors.OKBLUE}Running time: {current_good_time}, {bcolors.FAIL}Wasted time: {current_wasted_time}{bcolors.ENDC} -- Status: {oee.status}")
         # increment
         prev_time = new_time
 
     # once we have loaded all the older period, we can update data and wait for the next period
-    machineController.updateMachineStatus(machine)  # update machine data
     next_hour = (date + timedelta(hours=1)).replace(minute=0, second=0)  # to know which is the next hour
     second_to_wait = (next_hour - date).total_seconds()  # to know how many seconds we have to wait for the next period
     time.sleep(second_to_wait)  # sleep for waiting period
@@ -123,7 +150,7 @@ while len(machines) > 0:
 
 
 def loadNewMachineFromFile():
-    fp = open("prova.json", "r")
+    fp = open("machine_example.json", "r")
     x = json.loads(fp.read())
     mc = Machine.from_dict(x)
     machineController.storeMachine(mc)
