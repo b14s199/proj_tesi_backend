@@ -18,6 +18,8 @@ class Machine:
                 list_oee = dict()
                 for y in source[x]:
                     obj_oee = OEE()
+                    for k in source[x][y]:
+                        setattr(obj_oee, k, source[x][y][k]);
                     list_oee[y] = obj_oee
                 setattr(obj, x, list_oee)
             else:

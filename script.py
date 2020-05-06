@@ -107,11 +107,11 @@ while len(machines) > 0:
                 oee.performance = 0
                 oee.quality = 0
                 oee.general = 0
-            if oee.general == 0:
+            if oee.availability == 0:
                 oee.status = "off"
-            elif oee.general < 30:
+            elif oee.availability < 30:
                 oee.status = "error"
-            elif oee.general < 50:
+            elif oee.availability < 50:
                 oee.status = "warning"
             else:
                 oee.status = "run"
