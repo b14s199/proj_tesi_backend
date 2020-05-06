@@ -3,10 +3,9 @@ from Model.hour_detail import HourDetail
 
 
 class OEE:
-    def __init__(self, good_pieces=None, bad_pieces=None, hour_detail=None):
+    def __init__(self, good_pieces=None, bad_pieces=None):
         self.good_pieces = good_pieces
         self.bad_pieces = bad_pieces
-        self.hour_detail = hour_detail
 
     def toJSON(self):
         diction = copy.deepcopy(self.__dict__)

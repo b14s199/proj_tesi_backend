@@ -39,7 +39,6 @@ while len(machines) > 0:
         # foreach machine in db we're going to update relative oee
         for machine in machines:
             machine = machines[machine]
-            list_hour_detail = list()
             toFind = ""
             for z in machine.program:
                 toFind += f"Program = '{z}' OR "
@@ -55,8 +54,6 @@ while len(machines) > 0:
                 diff_between_time = first_production_time - prev_time
                 if diff_between_time > timedelta(minutes=0):
                     current_good_time = timedelta(seconds=0)
-                    x = HourDetail(status="off", startHour=prev_time, endHour=first_production_time)
-                    list_hour_detail.append(x)
                     machine.last_production_time = rs[0]["time"]
                 else:
                     current_good_time = timedelta(seconds=0)
@@ -77,20 +74,7 @@ while len(machines) > 0:
                         or (diff_between_time > timedelta(seconds=machine.max_interval_different_pieces) and data[
                     "Traciability_Code"] != last_traciability_code):
                     current_wasted_time += diff_between_time
-                    if x is not None:
-                        x.endHour = last_production_time
-                        list_hour_detail.append(x)
-                    x = HourDetail(status="delay", startHour=last_production_time, endHour=current_production_time)
-                    list_hour_detail.append(x)
-                    x = None
                 else:
-                    if x is None:  # significa che ancora non è stato impostato l'orario di inizio turno "positivo"
-                        x = HourDetail(status="run", startHour=current_production_time,
-                                       endHour=None)  # non so a che ora finisce però il turno "positivo"
-                    if data == rs[-1]:
-                        x.endHour = current_production_time
-                        list_hour_detail.append(x)
-                        x = None
                     current_good_time += diff_between_time
                 last_production_time = current_production_time
                 if error is True and data["Traciability_Code"] == last_traciability_code:
@@ -106,14 +90,13 @@ while len(machines) > 0:
                     error = True
 
             # adding the last off shift to complete the period and update the last production time
-            x = HourDetail(status="off", startHour=machine.last_production_time, endHour=new_time)
-            list_hour_detail.append(x)
             machine.last_production_time = new_time.strftime('%Y-%m-%dT%H:%M:%SZ')
-            machine.last_available_oee = str(prev_time)
+            machine.last_available_oee = str(new_time)
 
             # declare a new OEE object about the current period and add it to the machine
-            oee = OEE(good_pieces=current_good_pieces, bad_pieces=current_bad_pieces, hour_detail=list_hour_detail)
+            oee = OEE(good_pieces=current_good_pieces, bad_pieces=current_bad_pieces)
             if current_good_time.total_seconds() + current_wasted_time.total_seconds() > 0 and current_good_pieces + current_bad_pieces > 0:
+               #  lo stato della macchina viene calcolato sulla base della disponibilità
                 oee.availability = round(current_good_time.total_seconds() / (
                         current_good_time.total_seconds() + current_wasted_time.total_seconds()) * 100, 2)
                 oee.performance = round(90 * current_good_pieces / current_good_time.total_seconds() * 100, 2)
@@ -132,8 +115,7 @@ while len(machines) > 0:
                 oee.status = "warning"
             else:
                 oee.status = "run"
-            machine.addOEE(oee, str(prev_time))
-
+            machine.addOEE(oee, str(new_time))
             machineController.updateMachineStatus(machine)  # update machine data
 
             # info print
