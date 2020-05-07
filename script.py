@@ -4,7 +4,6 @@ from datetime import datetime
 from datetime import timedelta
 from Model.machine import Machine
 from Model.oee import OEE
-from Model.hour_detail import HourDetail
 import time
 import json
 
@@ -65,6 +64,7 @@ while len(machines) > 0:
             current_wasted_time = timedelta(seconds=0)
             x = None
             for data in rs:
+                last_traciability_code = machine.last_traciability_code
                 if len(data["time"]) == 22:  # if the time includes milliseconds
                     data["time"] = data["time"][:-3] + "Z"
                 current_production_time = datetime.strptime(data["time"], '%Y-%m-%dT%H:%M:%SZ')
@@ -83,7 +83,7 @@ while len(machines) > 0:
                     continue
                 elif last_traciability_code != data["Traciability_Code"]:
                     current_good_pieces += 1
-                    last_traciability_code = data["Traciability_Code"]
+                    machine.last_traciability_code = data["Traciability_Code"]
                     error = False
                 if data["Error"] == 1:
                     current_bad_pieces += 1
@@ -91,7 +91,7 @@ while len(machines) > 0:
 
             # adding the last off shift to complete the period and update the last production time
             machine.last_production_time = new_time.strftime('%Y-%m-%dT%H:%M:%SZ')
-            machine.last_available_oee = str(new_time)
+            machine.last_available_oee = str(prev_time)
 
             # declare a new OEE object about the current period and add it to the machine
             oee = OEE(good_pieces=current_good_pieces, bad_pieces=current_bad_pieces)
@@ -99,7 +99,7 @@ while len(machines) > 0:
                #  lo stato della macchina viene calcolato sulla base della disponibilità
                 oee.availability = round(current_good_time.total_seconds() / (
                         current_good_time.total_seconds() + current_wasted_time.total_seconds()) * 100, 2)
-                oee.performance = round(90 * current_good_pieces / current_good_time.total_seconds() * 100, 2)
+                oee.performance = round(machine.cycle_time * current_good_pieces / current_good_time.total_seconds() * 100, 2)
                 oee.quality = round(current_good_pieces / (current_bad_pieces + current_good_pieces) * 100, 2)
                 oee.general = round(oee.availability * oee.performance * oee.quality / 10000, 2)
             else:
@@ -115,7 +115,7 @@ while len(machines) > 0:
                 oee.status = "warning"
             else:
                 oee.status = "run"
-            machine.addOEE(oee, str(new_time))
+            machine.addOEE(oee, str(prev_time))
             machineController.updateMachineStatus(machine)  # update machine data
 
             # info print
@@ -129,6 +129,7 @@ while len(machines) > 0:
     second_to_wait = (next_hour - date).total_seconds()  # to know how many seconds we have to wait for the next period
     time.sleep(second_to_wait)  # sleep for waiting period
     date = datetime.now()  # set new time
+
 
 
 def loadNewMachineFromFile():
