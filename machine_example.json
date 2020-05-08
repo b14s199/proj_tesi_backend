@@ -1,0 +1,13 @@
+{
+  "expected_pieces": 150,
+  "program": ["SALDATURA OP2"],
+  "last_production_time": "2019-12-05T00:00:00Z",
+  "last_traciability_code": "",
+  "max_interval_different_pieces": 120,
+  "max_interval_same_piece": 30,
+  "min_pause_interval": 1,
+  "name": "OP70",
+  "oee": {
+
+  }
+}
